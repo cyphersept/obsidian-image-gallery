@@ -26,11 +26,13 @@ const getSettings = (src: string, container: HTMLElement) => {
     gutter: undefined as string,
     sortby: undefined as string,
     sort: undefined as string,
+    groupby: undefined as string,
     mobile: undefined as number,
     columns: undefined as number,
     height: undefined as number,
     imagerender: undefined as string,
     subfolders: false,
+    ignore: undefined as string,
   };
 
   settings.path = normalizePath(settingsSrc.path);
@@ -39,8 +41,10 @@ const getSettings = (src: string, container: HTMLElement) => {
   settings.gutter = settingsSrc.gutter ?? 8;
   settings.sortby = settingsSrc.sortby ?? "ctime";
   settings.sort = settingsSrc.sort ?? "desc";
+  settings.groupby = settingsSrc.groupby ?? "none";
   settings.imagerender = settingsSrc.imagerender ?? "auto";
   settings.subfolders = settingsSrc.subfolders;
+  settings.ignore = settingsSrc.ignore ?? "";
 
   // settings for vertical mansory only
   settings.mobile = settingsSrc.mobile ?? 1;

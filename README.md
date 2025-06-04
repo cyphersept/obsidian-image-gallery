@@ -68,7 +68,7 @@ Settings can be customized in any order, in `yaml` syntax. Optional properties d
 | `type` | `horizontal` | `vertical` | No | Type of masonry |
 | `gutter` | `8` | (any number) | No | Spacing in px between the images |
 | `radius` | `0` | (any number) | No | Border radius in px of the images |
-| `sortby` | `ctime` | `mtime`, `name`, `width`, `height` | No | Sort images by |
+| `sortby` | `ctime` | `mtime`, `name`, `size', 'folder' | No | Sort images by |
 | `sort` | `desc` | `asc` | No | Order of sorting |
 | `imagerender` | `auto` | `pixelated`, `smooth`, `crisp-edges` | No | Image scaling appearance |
 
